@@ -1,0 +1,91 @@
+# 运行模式 dev or prod
+runmode: dev
+# 回收箱保留48小时
+trash: -48
+# 定时清理回收箱，%d小时
+clean: 1
+# 首页展示文章数量
+pagenum: 10
+# 管理界面
+pagesize: 20
+# 自动截取预览, 字符数
+length: 400
+# 截取预览标识
+identifier: <!--more-->
+# 文章描述前缀
+description: "Desc:"
+# 起始ID，预留id不时之需, 不用管
+startid: 11
+# elasticsearch url
+searchurl: http://elasticsearch:9200
+# 评论相关
+disqus:
+  shortname: anlasheng
+  publickey: wdSgxRm9rdGAlLKFcFdToBe3GT4SibmV7Y8EjJQ0r4GWXeKtxpopMAeIeoI2dTEg
+  postscount: https://disqus.com/api/3.0/threads/set.json
+  postslist: https://disqus.com/api/3.0/threads/listPosts.json
+  postcreate: https://disqus.com/api/3.0/posts/create.json
+  interval: 5
+# 热搜词配置
+hotwords:
+  - docker
+# 谷歌统计
+google:
+  tid: UA-77251712-1
+  v: "1"
+  t: pageview
+# 静态文件版本
+staticversion: 1
+# 七牛CDN
+kodo:
+  name: eiblog
+  domain: st.anlasheng.com
+  accesskey: MB6AXl_Sj_mmFsL-Lt59Dml2Vmy2o8XMmiCbbSeC
+  secretkey: BIrMy0fsZ0_SHNceNXk3eDuo7WmVYzj2-zrmd5Tf
+# 运行模式
+mode:
+  # you can fix certfile, keyfile, domain
+  enablehttp: true
+  httpport: 9000
+  enablehttps: false
+  httpsport: 443
+  certfile: conf/certs/domain.pem
+  keyfile: conf/certs/domain.key
+  domain: anlasheng.com
+# twitter地址: twitter.com/anlasheng
+twitter: 
+  card: summary
+  site: anlasheng
+  image: st.anlasheng.com/static/img/avatar.jpg
+  address: twitter.com/anlasheng
+# superfeedr url
+feedrurl: https://anlasheng.superfeedr.com/
+# ping rpcs 地址
+pingrpcs:
+  - http://ping.baidu.com/ping/RPC2
+  - http://blogsearch.google.com/ping/RPC2
+  - http://rpc.pingomatic.com/
+
+# 以下数据初始化用，可在后台修改
+account:
+  # *后台登录用户名
+  username: admin
+  # *登录明文密码
+  password: admin
+  # 邮箱，用于通知: anlasheng@163.com
+  email: anlasheng@163.com
+  # 手机号, "+8615100000000"
+  phonenumber: "+8615100000000"
+  # 家庭住址
+  address: ""
+blogger:
+  # left显示名称: anlasheng
+  blogname: anlasheng
+  # 小标题: 不抛弃，不放弃
+  subtitle: 不抛弃，不放弃
+  # 备案号:  ICP 备 16021362 号
+  beian:  ICP 备 16021362 号
+  # footer显示名称及tab标题: anlasheng's Blog
+  btitle: anlasheng's Blog
+  # 版权声明: 本站使用「<a href="//creativecommons.org/licenses/by/4.0/">署名 4.0 国际</a>」创作共享协议，转载请注明作者及原网址。
+  copyright: 本站使用「<a href="//creativecommons.org/licenses/by/4.0/">署名 4.0 国际</a>」创作共享协议，转载请注明作者及原网址。
